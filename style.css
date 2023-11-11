@@ -1,0 +1,117 @@
+.mainmenu-area ul {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mainmenu-area ul li {
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.mainmenu-area li a {
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+    display: block;
+}
+
+.mainmenu-area li ul {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    width: 250px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 0 10px #949494;
+    z-index: 99;
+}
+
+.mainmenu-area li ul a {
+    text-transform: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainmenu-area li ul li {
+    display: block;
+}
+
+.mainmenu-area li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 46px;
+}
+
+.mainmenu-area ul li > a {
+    transition: .3s;
+}
+
+.mainmenu-area ul li:hover > a {
+    color: #24d5a1;
+}
+
+.mainmenu-area li:hover li:hover > a {
+    background-color: #24d5a1;
+    color: #Fff;
+}
+
+.mainmenu-area li.mega-menu {
+    position: static;
+}
+
+.mega-menu-wrapper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    z-index: -1;
+    box-shadow: 0 0 5px #b1b1b1;
+    top: 86px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    text-align: center;
+}
+
+.mainmenu-area li.mega-menu ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+    box-shadow: 0 0 0;
+    width: auto;
+}
+
+.mega-menu-wrapper .boxed-btn {
+    background-color: #24d5a1;
+    color: #fff;
+}
+
+.mainmenu-area li.mega-menu:hover .mega-menu-wrapper {
+    opacity: 1;
+    visibility: visible;
+    top: 46px;
+    z-index: 99;
+}
+
+.mega-menu-wrapper h5 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 15px;
+}
